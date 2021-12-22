@@ -1,0 +1,38 @@
+RULES:
+------	Players have to find a pair of identical cards to achieve 1 point
+------	Two identical cards found by a player will be removed from the  grid of cards
+------	If a player do not find a pair of card in his/her turn, then the turn of playing will be moved to another player. If the player find a pair of card, then he/she will be in turn until he/she find not-matched pair
+------	The final result of the game has two cases:
+	- One winner who has the highest point
+	- Several winners who have the same point (Tie)
+
+RESTRICTIONS:
+-------	The number of cards must be even, at least 2 (1 pair in minimum) and at most 20 (10 pairs in maximum)
+-------	The number of players is at least 2
+
+HOW TO USE THE PROGRAM:
+=== USER INTERFACE:
+-------	Firstly, the player must type the number of cards and players as he/she want according to the RESTRICTIONS part
+------	Then the game starts with the turn of playing follows the rule: the name of player is typed first will play first
+------	There is a digital clock which counts the total time of gameplay at the top of the window. Next to it is the label which displays the name of player who is in turn
+------	Above the grid of cards is the combobox where a player can choose which player's point  he/she want to be showed. Next to the combobox is the label displaying the total point of selected player. Below of them is the card deck which showing which cards are achieved by selected player (selecting through combobox)
+------	There is a 'Pause' button at the bottom of window, which can be used to pause the game - the clock will be stopped.
+------	After the game end, there is a pop-up box which shows the result and ask player if he/she want to replay or not. If he/she choose 'Yes', the game will restart with the same number of cards and number of players as the game before. If he/she choose 'No', the game will show the main menu where the player can choose start game with different amount of cards and players or quit the game.
+=== FUNCTIONALITY:
+-------	A player choose a card by click on it. When it is clicked, it will be flipped - showing the front page of the card. When 2 cards are flipped, there will be a delay interval before unflipping - showing the back of the card.
+
+FUNCTIONALITIES HAVE BEEN IMPLEMENTED:
+-------	The game allows a variable number of players which is asked from the user, and they can name the players in game
+------- The name of currently-in-turn player is shown
+-------	There is an upper bound for the amount of cards (20 at most), so the player can play with a variable amount of cards
+-------	Cards are displayed with 2 different figures at front and back. 
+-------	The back of cards are the same for all
+-------	The grid of cards has the amounts of rows and columns are as close to each other as possible
+-------	The card is turned by clicking on it. Clicking multiple times on it doesn't affect
+-------	When cards are turned, ther can only be at most two cards visible at a time
+-------	There is a delay interval between flipping and unflipping cards (faces of cards are visible long enough)
+-------	The result - name and points of winner(s) - is shown at the end of the game
+-------	The game status is shown graphically, the deck of players can show which cards a choosen player has achieved and the total cards he/she obtained.
+-------	The time used so far is shown during the game
+-------	It is possible to replay the game when it ends without restart the program
+
